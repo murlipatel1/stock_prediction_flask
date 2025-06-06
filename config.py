@@ -4,7 +4,6 @@ class Config:
     # Flask configuration
     DEBUG = True
     TESTING = False
-    SECRET_KEY = 'your_secret_key_here'
 
     # Model parameters
     SEQUENCE_LENGTH = 10
@@ -12,7 +11,7 @@ class Config:
     BATCH_SIZE = 32
 
     # Data source settings
-    DATA_SOURCE = 'yahoo'  # Options: 'yahoo', 'other_source'
+    DATA_SOURCE = 'yahoo'
     
     # Stock symbols
     INDIAN_STOCKS = [
@@ -32,6 +31,3 @@ class Config:
         "HCLTECH.NS",
         "SUNPHARMA.NS"
     ]
-
-    # API keys (if needed)
-    # API_KEY = 'your_api_key_here'
