@@ -1,8 +1,13 @@
+
+import os
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'  # Force CPU usage
+
 from flask import Flask, jsonify
 from flask_cors import CORS
 from routes import api_bp
 import logging
-import os
 
 def create_app():
     app = Flask(__name__)
