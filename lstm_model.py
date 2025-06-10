@@ -150,7 +150,7 @@ import joblib
 import os
 
 class LSTMModel:
-    def __init__(self, sequence_length=10, model_dir='stock_models_lstm_v2'):
+    def __init__(self, sequence_length=10, model_dir='stock_models_lstm_v3'):
         self.sequence_length = sequence_length
         self.model = None
         self.scaler_X = None
